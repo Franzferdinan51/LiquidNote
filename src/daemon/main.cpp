@@ -74,7 +74,7 @@ int main(int argc, char const * argv[])
     po::positional_options_description positional_options;
     {
       // Misc Options
-
+      command_line::add_arg(core_settings, command_line::arg_print_gen);
       command_line::add_arg(visible_options, command_line::arg_help);
       command_line::add_arg(visible_options, command_line::arg_version);
       command_line::add_arg(visible_options, daemon_args::arg_os_version);
