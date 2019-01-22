@@ -169,7 +169,10 @@ int main(int argc, char const * argv[])
       std::cerr << "Can't specify more than one of --tesnet and --stagenet and --regtest" << ENDL;
       return 1;
     }
-
+const bool printgen = command_line::get_arg(vm, cryptonote::arg_print_gen);
+if(printgen){
+    print_genesis_tx_hex(some kind of variable here);
+}
     std::string db_type = command_line::get_arg(vm, cryptonote::arg_db_type);
 
     // verify that blockchaindb type is valid
