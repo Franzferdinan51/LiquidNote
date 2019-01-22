@@ -631,7 +631,7 @@ namespace cryptonote
         continue; // if interrupted because stop called, loop should end ..
       }
 
-      bool on_ac_power = m_ignore_battery;
+    bool on_ac_power = m_ignore_battery;
       if(!m_ignore_battery)
       {
         boost::tribool battery_powered(on_battery_power());
