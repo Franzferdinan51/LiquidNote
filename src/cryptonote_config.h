@@ -166,7 +166,7 @@ namespace config
       0x99 ,0x60, 0xF1, 0x71 , 0x91, 0x54 , 0x47, 0x61, 0x17, 0x31, 0x00, 0x82, 0x16, 0xA1, 0xA1, 0x15
     } }; // Bender's nightmare
   std::string const GENESIS_TX = "013c01ff0001ffffffffffff03029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121017767aafcde9be00dcfd098715ebcf7f410daebc582fda69d24a28e9d0bc890d1";
-  uint32_t const GENESIS_NONCE = 10000;
+  uint32_t const GENESIS_NONCE = 10070;
 
   namespace testnet
   {
@@ -180,7 +180,7 @@ namespace config
         0x12 ,0x30, 0xF1, 0x71 , 0x11, 0x04 , 0x61, 0x62, 0x17, 0x37, 0x90, 0x82, 0x16, 0xA1, 0xA1, 0x11
       } }; // Bender's daydream
     std::string const GENESIS_TX = "013c01ff0001ffffffffffff03029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121017767aafcde9be00dcfd098715ebcf7f410daebc582fda69d24a28e9d0bc890d1";
-    uint32_t const GENESIS_NONCE = 10001;
+    uint32_t const GENESIS_NONCE = 10051;
   }
 
   namespace stagenet
@@ -195,7 +195,7 @@ namespace config
         0x12 ,0x30, 0xF1, 0x71 , 0x61, 0x94 , 0x41, 0x65, 0x07, 0x71, 0x00, 0x82, 0x16, 0xA1, 0xA1, 0x12
       } }; // Bender's daydream
     std::string const GENESIS_TX = "013c01ff0001ffffffffffff0302df5d56da0c7d643ddd1ce61901c7bdc5fb1738bfe39fbe69c28a3a7032729c0f2101168d0c4ca86fb55a4cf6a36d31431be1c53a3bd7411bb24e8832410289fa6f3b";
-    uint32_t const GENESIS_NONCE = 10002;
+    uint32_t const GENESIS_NONCE = 10092;
   }
 }
 
