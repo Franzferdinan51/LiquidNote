@@ -635,12 +635,18 @@ namespace cryptonote
       bool on_ac_power = m_ignore_battery;
       if(!m_ignore_battery)
       {
-        boost::tribool battery_powered(on_battery_power());
-        if(!indeterminate( battery_powered ))
-        {
-          on_ac_power = !(bool)battery_powered;
-        }
-      }
+      diff --git a/src/cryptonote_basic/miner.cpp b/src/cryptonote_basic/miner.cpp
+index d0b03593e..d8ca2dd35 100644
+--- a/src/cryptonote_basic/miner.cpp
++++ b/src/cryptonote_basic/miner.cpp
+@@ -637,7 +637,7 @@ namespace cryptonote
+         boost::tribool battery_powered(on_battery_power());
+         if(!indeterminate( battery_powered ))
+         {
+-          on_ac_power = !battery_powered;
++          on_ac_power = !(bool)battery_powered;
+         }
+       }
 
       if( m_is_background_mining_started )
       {
