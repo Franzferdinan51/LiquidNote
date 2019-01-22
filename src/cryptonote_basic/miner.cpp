@@ -643,8 +643,7 @@ index d0b03593e..d8ca2dd35 100644
          boost::tribool battery_powered(on_battery_power());
          if(!indeterminate( battery_powered ))
          {
--          on_ac_power = !battery_powered;
-+          on_ac_power = !(bool)battery_powered;
+-        on_ac_power = !(static_cast<bool> (battery_powered));
          }
        }
 
