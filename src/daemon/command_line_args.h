@@ -115,7 +115,11 @@ namespace daemon_args
       return val;
     }
   };
-
+added const command_line::arg_descriptor<unsigned> arg_print_gen = {
+"print-genesis-tx",
+"",
+""
+};
 }  // namespace daemon_args
 
 #endif // DAEMON_COMMAND_LINE_ARGS_H
