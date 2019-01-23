@@ -268,5 +268,5 @@ namespace cryptonote
     }
 
     return result;
-  
+   }
   }
