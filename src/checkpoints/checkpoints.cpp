@@ -278,4 +278,3 @@ namespace cryptonote
 
     return result;
   }
-}
