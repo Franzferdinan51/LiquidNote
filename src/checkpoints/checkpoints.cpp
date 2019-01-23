@@ -276,4 +276,4 @@ namespace cryptonote
       result &= load_checkpoints_from_dns(nettype);
     }
 
-    return result;
+    return result};
