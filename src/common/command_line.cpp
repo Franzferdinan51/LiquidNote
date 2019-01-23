@@ -76,4 +76,5 @@ namespace command_line
 
   const arg_descriptor<bool> arg_help = {"help", "Produce help message"};
   const arg_descriptor<bool> arg_version = {"version", "Output version information"};
+  const arg_descriptor<bool> arg_print_gen = {"print-genesis-tx", "Prints genesis tx"};
 }
