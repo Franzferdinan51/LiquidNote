@@ -55,7 +55,7 @@
 
 namespace po = boost::program_options;
 namespace bf = boost::filesystem;
-
+void print_genesis_tx_hex(uint8_t nettype);
 int main(int argc, char const * argv[])
 {
   try {
