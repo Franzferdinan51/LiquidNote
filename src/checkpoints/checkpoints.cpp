@@ -157,7 +157,7 @@ namespace cryptonote
     return true;
   }
 
-#  bool checkpoints::init_default_checkpoints(network_type nettype)
+  bool checkpoints::init_default_checkpoints(network_type nettype)
   {
     if (nettype == TESTNET)
     {
