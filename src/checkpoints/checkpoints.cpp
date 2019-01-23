@@ -277,4 +277,3 @@ namespace cryptonote
     }
 
     return result;
-  }
