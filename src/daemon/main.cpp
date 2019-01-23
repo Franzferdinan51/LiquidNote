@@ -171,7 +171,7 @@ int main(int argc, char const * argv[])
     }
 const bool printgen = command_line::get_arg(vm, cryptonote::arg_print_gen);
 if(printgen){
-    print_genesis_tx_hex(some kind of variable here);
+    print_genesis_tx_hex(0);
 }
     std::string db_type = command_line::get_arg(vm, cryptonote::arg_db_type);
 
