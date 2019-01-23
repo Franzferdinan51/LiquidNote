@@ -3435,7 +3435,7 @@ void BlockchainLMDB::set_hard_fork_version(uint64_t height, uint8_t version)
   MDB_val_copy<uint64_t> val_key(height);
   MDB_val_copy<uint8_t> val_value(version);
   int result;
-  result = mdb_put(*txn_ptr, m_hf_versions, &val_key, &val_value, MDB_SET);
+  result = mdb_put(*txn_ptr, m_hf_versions, &val_key, &val_value, MDB_APPEND);
   if (result == MDB_KEYEXIST)
     result = mdb_put(*txn_ptr, m_hf_versions, &val_key, &val_value, 0);
   if (result)
