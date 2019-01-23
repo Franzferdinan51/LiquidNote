@@ -118,7 +118,7 @@ namespace daemon_args
 const command_line::arg_descriptor<unsigned> arg_print_gen = {
 "print-genesis-tx",
 "",
-""
+0
 };
 }  // namespace daemon_args
 
