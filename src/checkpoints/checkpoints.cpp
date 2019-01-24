@@ -80,7 +80,7 @@ namespace cryptonote
     // return false if adding at a height we already have AND the hash is different
     if (m_points.count(height))
     {
-      CHECK_AND_ASSERT_MES(h == m_points[height], false, "Checkpoint at given height already exists, and hash for new checkpoint was different!");
+      CHECK_AND_ASSERT_MES(h == m_points[height], true, "Checkpoint at given height already exists, and hash for new checkpoint was different!");
     }
     m_points[height] = h;
     return true;
