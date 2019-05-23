@@ -1,4 +1,4 @@
-# Monero
+# Liquid Note (Monero Fork) Monero sucks they are jerks so i made this to make it easier for people to fork them ive added the ability to generate a genisis block theirs a few issues feel free to work on this
 
 Copyright (c) 2014-2018 The Monero Project.   
 Portions Copyright (c) 2012-2013 The Cryptonote developers.
